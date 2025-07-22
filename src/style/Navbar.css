@@ -1,0 +1,160 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00d1ff;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(11px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-12px);
+}
+
+.desktop-contact {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.desktop-contact:hover {
+    background-color: #00aacc;
+    border: none;
+}
+
+/* Hide mobile contact by default */
+.mobile-contact {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .desktop-contact {
+        display: none;
+    }
+
+    .mobile-contact {
+        display: block;
+        padding: 0.5rem 0;
+        color: black;
+        border-left: 2px solid black;
+    }
+
+    .navbar {
+        width: 90%;
+    }
+
+    .desktop-contact {
+        display: none;
+    }
+
+    .mobile-contact {
+        display: block;
+    }
+
+    .nav-links a {
+        padding: 0.5rem;
+        color: black;
+        border-left: 2px solid black;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+
+        /* Glass effect */
+        background: gainsboro;
+        /* Slightly more opaque */
+        backdrop-filter: blur(12px);
+        /* A bit stronger blur */
+        -webkit-backdrop-filter: blur(12px);
+
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+        /* subtle shadow */
+
+        display: none;
+        padding: 1rem 2rem;
+        border-radius: 15px;
+        z-index: 10;
+        margin-top: 1rem;
+        /* rounded corners */
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

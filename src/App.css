@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+.App{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.scrollvelocity{
+  position: relative;
+  width: 100vw;
+  height: 30vh;
+  margin-top: 7rem;
+  background-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+.gallery-container {
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-gradient {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 48px;
+  z-index: 10;
+}
+
+.gallery-gradient-left {
+  left: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #060010 100%);
+}
+
+.gallery-gradient-right {
+  right: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #060010 100%);
+}
+
+.gallery-content {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  perspective: 1000px;
+  transform-style: preserve-3d;
 }
 
-.App-link {
-  color: #61dafb;
+.gallery-track {
+  display: flex;
+  height: auto;
+  min-height: 200px;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  transform-style: preserve-3d;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.gallery-item {
+  position: absolute;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 8%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d; /* ✅ new */
+}
+
+.gallery-img {
+  pointer-events: none;
+  height: 120px;
+  width: 170px;
+  border-radius: 15px;
+  border: 3px solid #fff;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    padding: 1%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .gallery-img {
+    height: 150px;
+    width: 100px;
   }
 }
