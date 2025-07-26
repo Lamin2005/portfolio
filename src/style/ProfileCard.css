@@ -59,7 +59,7 @@ Removed to prevent background/blur/opacity changes on hover:
 
 .pc-card {
     height: 80svh;
-    max-height: 540px;
+    max-height: 500px;
     display: grid;
     aspect-ratio: 0.718;
     border-radius: var(--card-radius);

@@ -1,7 +1,7 @@
 import "../style/About.css";
 import SplitText from "./SplitText";
 import lmh from "../assets/lmh.png";
-import ProfileCard from './ProfileCard';
+import ProfileCard from "./ProfileCard";
 
 function About() {
   const handleAnimationComplete = () => {
@@ -26,6 +26,43 @@ function About() {
             textAlign="center"
             onLetterAnimationComplete={handleAnimationComplete}
           />
+
+          <p className="context">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            accusamus corrupti tempore voluptate a atque saepe alias nostrum,
+            repellendus ipsa, ducimus asperiores in est delectus! Suscipit
+            doloribus dolores minus totam!
+          </p>
+
+          <h3>Skillset & tools</h3>
+
+          <div className="skillset">
+            <p>Html</p>
+            <p>Css</p>
+            <p>Javascript</p>
+            <p>React</p>
+            <p>Php</p>
+            <p>C#</p>
+            <p>Firebase</p>
+            <p>MySQL</p>
+          </div>
+
+          <h2>Create</h2>
+
+          <p className="context">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            accusamus corrupti tempore voluptate a atque saepe alias nostrum,
+            repellendus ipsa, ducimus asperiores in est delectus! Suscipit
+            doloribus dolores minus totam!
+          </p>
+
+          <h3>Skillset & tools</h3>
+
+          <div className="skillset">
+            <p>Html</p>
+            <p>Css</p>
+            <p>Javascript</p>
+          </div>
         </div>
         <div className="img">
           <ProfileCard
