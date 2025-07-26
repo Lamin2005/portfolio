@@ -46,15 +46,6 @@ function Header() {
         <p className="greeting">Hi, I'm La Min Hein </p>
         <h1>a fullstack developmer based in Myanmar.</h1>
 
-        {/* <TrueFocus
-            sentence="True Focus"
-            manualMode={false}
-            blurAmount={5}
-            borderColor="red"
-            animationDuration={2}
-            pauseBetweenAnimations={1}
-          />
-      */}
         <p className="intro">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Necessitatibus consectetur rerum nemo repudiandae laudantium!

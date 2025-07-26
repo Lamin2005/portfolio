@@ -6,6 +6,7 @@
     align-items: center;
     flex-wrap: wrap;
     z-index: 10;
+    color: rgb(17, 149, 237);
 }
 
 .focus-word {
