@@ -140,6 +140,10 @@
 
 @media screen and (max-width:768px) {
 
+    .h-main {
+        padding-top: 1rem;
+    }
+
     .header {
         width: 100%;
     }
