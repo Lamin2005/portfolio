@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import "@fontsource/poppins"; // Default weight 400
 import "@fontsource/poppins/600.css"; // Optional: weight 600
 import ScrollVelocity from "./components/ScrollVelocity";
+import Timeline from "./components/Timeline";
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
       <Header />
       <About />
       <ScrollVelocity
-        texts={["React Bits", "Scroll Down"]}
+        texts={["Full-Stack Developmer","Full-Stack Developmer"]}
         velocity={20}
         className="custom-scroll-text"
       />
+      <Timeline />
     </div>
   );
 }

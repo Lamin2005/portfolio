@@ -141,7 +141,7 @@
 @media screen and (max-width:768px) {
 
     .h-main {
-        padding-top: 1rem;
+        padding-top: 0.5rem;
     }
 
     .header {
