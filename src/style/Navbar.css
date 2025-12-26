@@ -108,7 +108,9 @@
     }
 
     .navbar {
-        width: 90%;
+        width: 100%;
+        margin-top: 0rem;
+        border-radius: 0px;
     }
 
     .desktop-contact {
@@ -156,5 +158,6 @@
 
     .hamburger {
         display: flex;
+       
     }
 }

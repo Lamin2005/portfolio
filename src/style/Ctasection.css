@@ -1,0 +1,90 @@
+body {
+    background-color: #020617;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.social-cta {
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg,
+            rgba(56, 189, 248, 0.08),
+            rgba(99, 102, 241, 0.08));
+
+}
+
+/* Card */
+.cta-card {
+    max-width: 80%;
+    width: 100%;
+    padding: 60px 40px;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(180deg,
+            rgba(2, 6, 23, 0.95),
+            rgba(2, 6, 23, 0.8));
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    box-shadow:
+        0 0 0 1px rgba(56, 189, 248, 0.2),
+        0 35px 90px rgba(0, 0, 0, 0.75);
+}
+
+/* Text */
+.cta-card h2 {
+    font-size: 2.7rem;
+    color: #f8fafc;
+    margin-bottom: 15px;
+}
+
+.cta-card p {
+    color: #94a3b8;
+    font-size: 1.15rem;
+    margin-bottom: 45px;
+}
+
+.highlight {
+    color: #38bdf8;
+}
+
+/* Buttons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    padding: 15px 36px;
+    border-radius: 999px;
+    color: #f8fafc;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    box-shadow:
+        0 12px 35px rgba(56, 189, 248, 0.4),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+    transition: all 0.35s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow:
+        0 22px 55px rgba(99, 102, 241, 0.55),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .cta-card {
+        padding: 45px 25px;
+        border-radius: 24px;
+    }
+
+    .cta-card h2 {
+        font-size: 2.2rem;
+    }
+}

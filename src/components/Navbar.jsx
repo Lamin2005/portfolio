@@ -13,19 +13,18 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <div className={`nav-links ${isOpen ? "open" : ""}`}>
+          <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="#services">Services</a>
 
           {/* Contact shows only in mobile */}
           <a href="#contact" className="mobile-contact">
             Contact
-       
           </a>
         </div>
 
         <a href="#contact" className="desktop-contact">
-          Contact <FontAwesomeIcon icon={faArrowsUpDownLeftRight}/>
+          Contact <FontAwesomeIcon icon={faArrowsUpDownLeftRight} />
         </a>
 
         <div

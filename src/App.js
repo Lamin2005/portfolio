@@ -7,6 +7,7 @@ import "@fontsource/poppins"; // Default weight 400
 import "@fontsource/poppins/600.css"; // Optional: weight 600
 import ScrollVelocity from "./components/ScrollVelocity";
 import Timeline from "./components/Timeline";
+import Ctasection from "./components/Ctasection";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         className="custom-scroll-text"
       />
       <Timeline />
+      <Ctasection/>
     </div>
   );
 }

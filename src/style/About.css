@@ -4,6 +4,7 @@
     justify-content: center;
     padding: 3rem 0 1rem 0;
     margin-bottom: 5rem;
+    background-color: #020617;
 }
 
 .about .about_main {
@@ -17,7 +18,7 @@
 .about_main .text {
     width: 50%;
     height: 80%;
-    background-color: black;
+    background-color:#020617;
 }
 
 .text h1 {

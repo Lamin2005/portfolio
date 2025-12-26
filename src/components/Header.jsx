@@ -23,7 +23,7 @@ function Header() {
   ];
 
   return (
-    <section className="h-main">
+    <section className="h-main" id="home">
        <Squares
         speed={0.5}
         squareSize={40}
