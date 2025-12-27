@@ -79,11 +79,7 @@ body {
 /* Responsive */
 @media (max-width: 600px) {
     .cta-card {
-<<<<<<< HEAD
         width: 100%;
-=======
-        width:90%;
->>>>>>> c7affd5076547542bceac54d33ea776fd451274c
         padding: 45px 25px;
         border-radius: 24px;
     }

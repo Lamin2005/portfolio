@@ -12,10 +12,10 @@
   will-change: scroll-position;
   scrollbar-width: none;
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+
 }
 
 .scroll-stack-inner {
-  padding: 20vh 5rem 50rem;
   min-height: 50vh;
 }
 
@@ -98,9 +98,22 @@
 }
 
 @media (max-width: 900px) {
+
   .project-card,
   .project-card.reverse {
     flex-direction: column;
+  }
+
+  .scroll-stack-inner h1{
+    padding-left: 1rem;
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .scroll-stack-inner {
+    width: 100%;
+    padding: 15vh 15rem 50rem;
   }
 }
 
@@ -109,7 +122,8 @@
   bottom: 2rem;
   display: flex;
   justify-content: center;
-  pointer-events: none; /* scroll still works */
+  pointer-events: none;
+  /* scroll still works */
 }
 
 .projects-bottom p {
@@ -121,5 +135,3 @@
   font-size: 0.9rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
-
-
