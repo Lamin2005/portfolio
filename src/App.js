@@ -9,7 +9,8 @@ import ScrollVelocity from "./components/ScrollVelocity";
 import Timeline from "./components/Timeline";
 import Ctasection from "./components/Ctasection";
 import ScrollStack, { ScrollStackItem } from "./components/ScrollStack";
-import Contact from "./components/Contact";
+import ContactForm from "./components/Contactform";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -111,7 +112,8 @@ function App() {
           </div>
         </ScrollStackItem>
       </ScrollStack>
-      <Contact />
+      <ContactForm />
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,15 @@
 import React from "react";
 import "../style/Ctasection.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedinIn,
+  faFacebookF,
+} from "@fortawesome/free-brands-svg-icons";
+
+const FaGithub = () => <FontAwesomeIcon icon={faGithub} />;
+const FaLinkedinIn = () => <FontAwesomeIcon icon={faLinkedinIn} />;
+const FaFacebookF = () => <FontAwesomeIcon icon={faFacebookF} />;
 
 function Ctasection() {
   return (
@@ -12,9 +22,9 @@ function Ctasection() {
     </p>
 
     <div className="social-links">
-      <a href="#" target="_blank" className="social-btn">🐙 GitHub</a>
-      <a href="#" target="_blank" className="social-btn">💼 LinkedIn</a>
-      <a href="#" target="_blank" className="social-btn">📧 Email</a>
+      <a href="#" target="_blank" className="social-btn"><FaGithub /> Github</a>
+      <a href="#" target="_blank" className="social-btn"><FaLinkedinIn /> LinkIn</a>
+      <a href="#" target="_blank" className="social-btn"><FaFacebookF /> Facebook</a>
     </div>
   </div>
 </section>

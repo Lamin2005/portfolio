@@ -5,13 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 800vh;
   scroll-behavior: smooth;
+
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
 
 
 code {
@@ -26,10 +28,11 @@ code {
 .vertical-timeline-element-content:hover {
   transform: translateY(-6px) scale(1.02);
 }
+
 .vertical-timeline-element-content .vertical-timeline-element-date {
   color: #888;
 }
 
 .vertical-timeline-element-icon {
-  box-shadow: 0 0 20px rgba(255,255,255,0.25);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
 }

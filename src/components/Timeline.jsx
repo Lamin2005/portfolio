@@ -55,7 +55,12 @@ export default function Timeline() {
 
   return (
     <div
-      style={{ background: "#020617", padding: "50px 0", marginTop: "30px" }}
+      style={{
+        background: "#020617",
+        padding: "50px 0",
+        marginTop: "30px",
+        overflowX: "hidden",
+      }}
     >
       <h1
         style={{
