@@ -4,7 +4,7 @@ import "../style/ContactForm.css";
 
 const ContactForm = () => {
   const formRef = useRef();
-  const [loading,setloading]=useState(false);
+  const [loading, setloading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -12,7 +12,7 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-         process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         formRef.current,
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
@@ -32,19 +32,23 @@ const ContactForm = () => {
 
   return (
     <section className="contact">
-      <h2 className="contact-title">📩 Contact Me</h2>
+      <div className="contact-wrapper">
+        <h2 className="contact-title">📩 Contact Me</h2>
 
-      <form ref={formRef} onSubmit={sendEmail} className="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          rows="5"
-          required
-        />
-        <button type="submit" disabled={loading}>🚀 {loading ? "Sending..." : "Send Message"}</button>
-      </form>
+        <form ref={formRef} onSubmit={sendEmail} className="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+          />
+          <button type="submit" disabled={loading}>
+            🚀 {loading ? "Sending..." : "Send Message"}
+          </button>
+        </form>
+      </div>
     </section>
   );
 };

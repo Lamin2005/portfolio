@@ -15,7 +15,7 @@ export default function Navbar() {
         <div className={`nav-links ${isOpen ? "open" : ""}`}>
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+          <a href="#project">Projects</a>
 
           {/* Contact shows only in mobile */}
           <a href="#contact" className="mobile-contact">
