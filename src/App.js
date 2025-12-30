@@ -11,25 +11,45 @@ import Ctasection from "./components/Ctasection";
 import ContactForm from "./components/Contactform";
 import Footer from "./components/Footer";
 import Project from "./components/Project";
+import { useState, useEffect } from "react";
+import Preloader from "./components/Preloader";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="App">
       {/*<RollingGallery autoplay={true} pauseOnHover={true} />*/}
-
-      <Navbar />
-      <Header />
-      <About />
-      <ScrollVelocity
-        texts={["Full-Stack Developer", "Full-Stack Developer"]}
-        velocity={20}
-        className="custom-scroll-text"
-      />
-      <Timeline />
-      <Ctasection />
-      <Project />
-      <ContactForm />
-      <Footer />
+      {loading && (
+        <div className="page-loader">
+          <Preloader size={64} />
+        </div>
+      )}
+      {!loading && (
+        <>
+          <Navbar />
+          <Header />
+          <About />
+          <ScrollVelocity
+            texts={["Full-Stack Developer", "Full-Stack Developer"]}
+            velocity={20}
+            className="custom-scroll-text"
+          />
+          <Timeline />
+          <Ctasection />
+          <Project />
+          <ContactForm />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
