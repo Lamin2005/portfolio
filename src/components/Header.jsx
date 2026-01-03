@@ -43,8 +43,9 @@ function Header() {
             cardsData={images}
           />
         </div>
-        <p className="greeting">Hi, I'm La Min Hein </p>
-        <h1>a fullstack developmer based in Myanmar.</h1>
+        <h1 className="greeting">La Min Hein </h1>
+
+        <h2>a fullstack developer based in Myanmar.</h2>
 
         <p className="intro">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.

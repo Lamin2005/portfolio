@@ -47,7 +47,7 @@ function About() {
             <p>MySQL</p>
           </div>
 
-          <h2>Create</h2>
+          <p className="titletext">Designs and Automations</p>
 
           <p className="context">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate

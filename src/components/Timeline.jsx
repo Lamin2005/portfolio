@@ -62,16 +62,17 @@ export default function Timeline() {
         overflowX: "hidden",
       }}
     >
-      <h1
+      <h2
         style={{
           textAlign: "center",
           color: "#fff",
           marginBottom: "40px",
           fontStyle: "italic",
+          fontSize: "2.5rem",
         }}
       >
         My Journey
-      </h1>
+      </h2>
 
       <VerticalTimeline lineColor="#38bdf8">
         <VerticalTimelineElement

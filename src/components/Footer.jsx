@@ -19,13 +19,13 @@ export default function Footer() {
       </p>
 
       <div className="socials">
-        <a href="#" aria-label="GitHub">
+        <a href="https://github.com/Lamin2005" aria-label="GitHub">
           <FaGithub />
         </a>
-        <a href="#" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/la-min-hein-277bb338a" aria-label="LinkedIn">
           <FaLinkedinIn />
         </a>
-        <a href="#" aria-label="Facebook">
+        <a href="https://www.facebook.com/share/1Bz8fkMWaE/" aria-label="Facebook">
           <FaFacebookF />
         </a>
       </div>

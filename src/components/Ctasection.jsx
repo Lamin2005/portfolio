@@ -22,9 +22,9 @@ function Ctasection() {
     </p>
 
     <div className="social-links">
-      <a href="#" target="_blank" className="social-btn"><FaGithub /> Github</a>
-      <a href="#" target="_blank" className="social-btn"><FaLinkedinIn /> LinkIn</a>
-      <a href="#" target="_blank" className="social-btn"><FaFacebookF /> Facebook</a>
+      <a href="https://github.com/Lamin2005"  rel="noopener noreferrer" target="_blank" className="social-btn"><FaGithub /> Github</a>
+      <a href="https://www.linkedin.com/in/la-min-hein-277bb338a"  rel="noopener noreferrer" target="_blank" className="social-btn"><FaLinkedinIn /> LinkIn</a>
+      <a href="https://www.facebook.com/share/1Bz8fkMWaE/"  rel="noopener noreferrer" target="_blank" className="social-btn"><FaFacebookF /> Facebook</a>
     </div>
   </div>
 </section>
