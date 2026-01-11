@@ -28,10 +28,8 @@ function About() {
           />
 
           <p className="context">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            accusamus corrupti tempore voluptate a atque saepe alias nostrum,
-            repellendus ipsa, ducimus asperiores in est delectus! Suscipit
-            doloribus dolores minus totam!
+            I embarked on my IT journey in 2024 and I am currently expanding my
+            expertise in full-stack development, specializing in the MERN stack.
           </p>
 
           <h3>Skillset & tools</h3>
@@ -41,27 +39,28 @@ function About() {
             <p>Css</p>
             <p>Javascript</p>
             <p>React</p>
-            <p>Php</p>
-            <p>C#</p>
+            <p>Node js</p>
+            <p>Express</p>
             <p>Firebase</p>
-            <p>MySQL</p>
+            <p>Mongodb</p>
           </div>
 
-          <p className="titletext">Designs and Automations</p>
+          <p className="titletext">AI Integrations and Automations</p>
 
           <p className="context">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            accusamus corrupti tempore voluptate a atque saepe alias nostrum,
-            repellendus ipsa, ducimus asperiores in est delectus! Suscipit
-            doloribus dolores minus totam!
+            · <b>AI Integration</b>: Exploring the practical application of AI
+            models to build intelligent features.
+            <br />
+            <br />· <b>Process Automation</b>: Developing scripts and utilizing
+            tools to automate repetitive tasks and workflows.
           </p>
 
           <h3>Skillset & tools</h3>
 
           <div className="skillset">
-            <p>Html</p>
-            <p>Css</p>
-            <p>Javascript</p>
+            <p>Google Ai Studio</p>
+            <p>Lovable ai</p>
+            <p>Zapier</p>
           </div>
         </div>
         <div className="img">

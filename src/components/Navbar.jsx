@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <div className="nav-main">
       <nav className="navbar">
-        <div className="nav-logo">La Min Hein</div>
+        <div className="nav-logo"> {"</>"} La Min Hein</div>
 
         {/* Navigation Links */}
         <div className={`nav-links ${isOpen ? "open" : ""}`}>

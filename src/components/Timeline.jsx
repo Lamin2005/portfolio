@@ -45,12 +45,6 @@ export default function Timeline() {
       borderRadius: "18px",
       boxShadow: "0 15px 40px rgba(0,0,0,0.45)",
     },
-    {
-      background: "linear-gradient(135deg, #a855f7, #7c3aed)",
-      color: "#fff",
-      borderRadius: "18px",
-      boxShadow: "0 15px 40px rgba(0,0,0,0.45)",
-    },
   ];
 
   return (
@@ -76,7 +70,7 @@ export default function Timeline() {
 
       <VerticalTimeline lineColor="#38bdf8">
         <VerticalTimelineElement
-          date="2020"
+          date="2023"
           contentStyle={contentStyles[0]}
           iconStyle={{ background: "#6366f1", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faSchool} />}
@@ -86,7 +80,7 @@ export default function Timeline() {
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          date="2021"
+          date="2024"
           contentStyle={contentStyles[1]}
           iconStyle={{ background: "#22c55e", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faBookOpen} />}
@@ -96,7 +90,7 @@ export default function Timeline() {
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          date="2022"
+          date="2024"
           contentStyle={contentStyles[2]}
           iconStyle={{ background: "#f97316", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faCode} />}
@@ -106,7 +100,7 @@ export default function Timeline() {
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          date="2023"
+          date="2025"
           contentStyle={contentStyles[3]}
           iconStyle={{ background: "#38bdf8", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faWebAwesome} />}
@@ -116,23 +110,13 @@ export default function Timeline() {
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          date="2024"
+          date="2025"
           contentStyle={contentStyles[4]}
           iconStyle={{ background: "#ec4899", color: "#fff" }}
           icon={<FontAwesomeIcon icon={faBriefcase} />}
         >
           <h3>Web Developer</h3>
           <p>Full Stack Projects</p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          date="2025"
-          contentStyle={contentStyles[5]}
-          iconStyle={{ background: "#a855f7", color: "#fff" }}
-          icon={<FontAwesomeIcon icon={faDumbbell} />}
-        >
-          <h3>Fitness Platform</h3>
-          <p>Healthy Living App</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

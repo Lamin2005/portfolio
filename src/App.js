@@ -29,16 +29,16 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <title>Lamin Hein | React Web Developer</title>
+        <title>La Min Hein | Full-Stack Developer</title>
 
         <meta
           name="description"
-          content="Lamin Hein is a React web developer. This is my personal portfolio website built with React and CSS."
+          content="La Min Hein is a Full-Stack web developer. This is my personal portfolio website built with React and CSS."
         />
 
         <meta
           name="keywords"
-          content="Lamin Hein, laminhein, laminhein online, React developer Myanmar"
+          content="La Min Hein, laminhein, laminhein online, React developer Myanmar"
         />
 
         <link rel="canonical" href="https://www.laminhein.online/" />

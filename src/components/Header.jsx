@@ -24,16 +24,16 @@ function Header() {
 
   return (
     <section className="h-main" id="home">
-       <Squares
+      <Squares
         speed={0.5}
         squareSize={40}
         direction="diagonal" // up, down, left, right, diagonal
         borderColor="#271E37"
         hoverFillColor="#222"
         className="my-canvas"
-      />   
+      />
 
-       <div className="header">  
+      <div className="header">
         <div className="profileimg">
           <Stack
             randomRotation={true}
@@ -48,10 +48,11 @@ function Header() {
         <h2>a fullstack developer based in Myanmar.</h2>
 
         <p className="intro">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus consectetur rerum nemo repudiandae laudantium!
-          Repellendus iste maxime quia magnam dolore laboriosam inventore nisi
-          nulla, deserunt.
+          <p>
+            I am Lamin Hein, a fullstack developer specializing in React,
+            Nodejs and modern web design. I build responsive and
+            high-performance web applications.
+          </p>
         </p>
         <div className="buttons">
           <button className="contact_me">
@@ -62,7 +63,6 @@ function Header() {
           </button>
         </div>
       </div>
-
     </section>
   );
 }
