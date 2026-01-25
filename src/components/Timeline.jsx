@@ -9,8 +9,7 @@ import {
   faBookOpen,
   faCode,
   faWebAwesome,
-  faBriefcase,
-  faDumbbell,
+  faBriefcase
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Timeline() {
