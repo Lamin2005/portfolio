@@ -45,7 +45,7 @@ function About() {
             <p>Mongodb</p>
           </div>
 
-          <p className="titletext">AI Integrations and Automations</p>
+          <p className="titletext">Integrations and Automations</p>
 
           <p className="context">
             · <b>AI Integration</b>: Exploring the practical application of AI

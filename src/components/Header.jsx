@@ -49,16 +49,21 @@ function Header() {
 
         <p className="intro">
           <p>
-            I am Lamin Hein, a fullstack developer specializing in React,
-            Nodejs and modern web design. I build responsive and
-            high-performance web applications.
+            I am Lamin Hein, a fullstack developer specializing in React, Nodejs
+            and modern web design. I build responsive and high-performance web
+            applications.
           </p>
         </p>
         <div className="buttons">
-          <button className="contact_me">
-            Contact Me <FontAwesomeIcon icon={faArrowRightLong} />
-          </button>
-          <button className="download_cv">
+          <a className="contact_me" href="https://t.me/laminhein1122" rel="noopener noreferrer" target="_blank">
+            🚀Let's Talk <FontAwesomeIcon icon={faArrowRightLong} />
+          </a>
+          <button
+            className="download_cv"
+            onClick={() => {
+              alert("✨Comming Soon...");
+            }}
+          >
             Download CV <FontAwesomeIcon icon={faDownload} />
           </button>
         </div>
